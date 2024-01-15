@@ -116,13 +116,11 @@ h3 {
 #weather-section {
     display: grid;
     align-items: center;
-    position: absolute;
     grid-template-columns: 280px 1fr;
     width: 780px;
     height: 300px;
     margin-top: 50px;
-    top: 33vh;
-    left: 33vw;
+    margin-left: 150px;
 }
 
 .weather-info {
