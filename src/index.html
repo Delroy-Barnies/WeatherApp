@@ -4,12 +4,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Restaurant</title>
+    <title>Weather Board</title>
 </head>
 
 <body>
-    <div id="content">
+
+    <div class="wrapper">
+
+        <img class="whiteboard-scribbles" id="scribble-1" src="../src/images/Vector 3whiteboard_scribbles.svg"
+            width="250px">
+        <img class="whiteboard-scribbles" id="scribble-2" src="../src/images/Vector 3whiteboard_scribbles.svg"
+            width="250px">
+        <img class="whiteboard-scribbles" id="scribble-3" src="../src/images/Vector 1whiteboard_scribbles_2.svg"
+            width="250px">
+
+        <h1>Weather Board</h1>
+
+        <section id="search-section">
+            <form method="get" action="#">
+                <input onkeydown="return /[a-z\ ]/i.test(event.key)" id="search" placeholder="Search" name="search"
+                    required>
+            </form>
+        </section>
+
+        <section id="weather-section">
+            <div class="weather-icon-container"><img width="280px" id="weather-icon"
+                    src=<%=require("./images/cloudy_house.svg")%>
+            </div>
+            <div class="weather-info">
+
+                <div class="weather-info-top">
+                    <h3 id="condition">Cloudy</h3>
+                    <h3 id="city">Durban, Africa</h3>
+                </div>
+
+                <div class="weather-info-bottom">
+
+                    <div class="weather-info-left-side-bottom">
+                        <h2 id="temperature">18 </h2>
+                        <h3 class="temperature-unit" id="temperature-unit">&deg;C</h3>
+                    </div>
+
+                    <div class="weather-info-right-side-bottom">
+                        <div class="separator"></div>
+                        <div class="weather-info-right-side">
+                            <div class="feels-like-temperature-container">
+                                <h3 id="feels-like-temperature">Feels like: 17</h2>
+                                    <h3 class="temperature-unit">&deg;C</h3>
+                            </div>
+                            <h3 id="wind">Wind: 6KPH</h2>
+                                <h3 id="humidity">Humidity: 50%</h2>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
     </div>
+
 </body>
 
 </html>

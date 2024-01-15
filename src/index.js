@@ -1,31 +1,30 @@
-import { pageLoad } from "./homepage";
-import { menuPageLoad } from "./menupage";
-import { contactPageLoad } from "./contactpage";
-import "./styles.css";
+import "./style.css";
+import { setWeatherOnDOM } from "./domFunctions";
 
-const page = document.getElementById('content');
-let { header, body } = pageLoad();
+const input = document.querySelector('input');
 
-page.appendChild(header);
-page.appendChild(body);
+document.querySelector('form').addEventListener("submit", (e) => {
 
-document.getElementById("home-button").addEventListener('click', function () {
+    e.preventDefault();
 
-    page.removeChild(page.lastChild);
-    let { header, body } = pageLoad();
-    page.appendChild(body);
-});
+    fetch(`http://api.weatherapi.com/v1/current.json?key=41a6b63eb5a94b4aa4d180152240501&q=${input.value}&aqi=no`, { mode: 'cors' })
+        .then(function (response) {
+            return response.json();
+        })
+        .then(function (response) {
 
-document.getElementById("menu-button").addEventListener('click', function () {
+            const condition = response.current.condition.text;
+            const country = response.location.tz_id;
+            const city = response.location.name;
+            const temperature = response.current.temp_c;
+            const feelsLikeTemperature = response.current.feelslike_c;
+            const wind = response.current.wind_kph;
+            const humidity = response.current.humidity;
 
-    page.removeChild(page.lastChild);
-    let body = menuPageLoad();
-    page.appendChild(body);
-});
-
-document.getElementById("contact-button").addEventListener('click', function () {
-
-    page.removeChild(page.lastChild);
-    let body = contactPageLoad();
-    page.appendChild(body);
+            console.log(response);
+            setWeatherOnDOM(condition, country, city, temperature, feelsLikeTemperature, wind, humidity);
+        })
+        .catch((err) => {
+            alert("No matching locations found");
+        });
 });

@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap');
+
+:root {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    font-family: 'Caveat', cursive;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.whiteboard-scribbles {
+    position: fixed;
+    z-index: 10;
+}
+
+#scribble-1 {
+    top: 10vh;
+    left: 10vw;
+}
+
+#scribble-2 {
+    bottom: 5vh;
+    left: 15vw;
+}
+
+#scribble-3 {
+    bottom: 2vh;
+    right: 12vw;
+}
+
+.whiteboard-sticker {
+    position: fixed;
+}
+
+#sticker-umbrella {
+    top: 5vh;
+    right: 5vw;
+}
+
+#sticker-hamster {
+    top: 5vh;
+    left: 10vw;
+}
+
+.rules-of-the-board-container {
+    position: fixed;
+    bottom: 10vh;
+    left: 10vw;
+    z-index: 11;
+    width: 300px;
+    rotate: 20deg;
+
+    text-align: center;
+}
+
+ul li {
+    text-align: center;
+}
+
+h2,
+h3,
+h1 {
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    font-size: 10rem;
+    font-weight: 400;
+}
+
+h2 {
+    font-size: 8rem;
+    font-weight: 400;
+}
+
+h3 {
+    font-size: 2.1rem;
+}
+
+#search-section {
+    position: relative;
+    left: 500px;
+    margin-top: 50px;
+}
+
+#search {
+    font-size: 2rem;
+    font-family: 'Caveat', cursive;
+    padding-left: 15px;
+
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-top-width: 0px;
+}
+
+#search:focus {
+    outline: none;
+}
+
+#search::placeholder {
+    color: black;
+}
+
+#weather-section {
+    display: grid;
+    align-items: center;
+    position: absolute;
+    grid-template-columns: 280px 1fr;
+    width: 750px;
+    height: 300px;
+    margin-top: 50px;
+    top: 33vh;
+}
+
+.weather-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.weather-info-right-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    align-self: flex-end;
+    padding-left: 20px;
+
+    border-left-width: 2px;
+    border-left-color: black;
+    border-left-style: solid;
+}
+
+.weather-info-right-side-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 20px;
+}
+
+
+.weather-info-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.weather-info-left-side-bottom {
+    display: flex;
+}
+
+.weather-info-left-side-bottom h3 {
+    margin-top: 10px;
+}
+
+.weather-info-right-side-bottom {
+    height: 50%;
+}
+
+.feels-like-temperature-container {
+    display: flex;
+}
+
+
+
+
+
+/* 
+        <img class="whiteboard-sticker" id="sticker-umbrella" src="../src/images/hand-drawing-1957042_1920.png"
+            width="200px">
+        <img class="whiteboard-sticker" id="sticker-hamster" src="../src/images/cloudy_house.svg"
+            width="200px">
+
+        <div class="rules-of-the-board-container">
+            <h3>Rules of the board</h3>
+            <ul>
+                <li>Please respect the board at all times :)</li>
+                <li>To find out the weather, write the name of the city in the search bar</li>
+                <li>Watch the board use the power of API's to get the exact weather at this very moment (^o^) wow so
+                    cool!</li>
+                <li>Funny doodles submissions for the board will be accepted at www.thiswebsitedosentexist.com</li>
+            </ul>
+        </div>
+    */
