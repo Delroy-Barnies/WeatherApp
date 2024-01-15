@@ -174,25 +174,3 @@ h3 {
 .feels-like-temperature-container {
     display: flex;
 }
-
-
-
-
-
-/* 
-        <img class="whiteboard-sticker" id="sticker-umbrella" src="../src/images/hand-drawing-1957042_1920.png"
-            width="200px">
-        <img class="whiteboard-sticker" id="sticker-hamster" src="../src/images/cloudy_house.svg"
-            width="200px">
-
-        <div class="rules-of-the-board-container">
-            <h3>Rules of the board</h3>
-            <ul>
-                <li>Please respect the board at all times :)</li>
-                <li>To find out the weather, write the name of the city in the search bar</li>
-                <li>Watch the board use the power of API's to get the exact weather at this very moment (^o^) wow so
-                    cool!</li>
-                <li>Funny doodles submissions for the board will be accepted at www.thiswebsitedosentexist.com</li>
-            </ul>
-        </div>
-    */
