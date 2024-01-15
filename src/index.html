@@ -11,12 +11,12 @@
 
     <div class="wrapper">
 
-        <img class="whiteboard-scribbles" id="scribble-1" src="../src/images/Vector 3whiteboard_scribbles.svg"
-            width="250px">
-        <img class="whiteboard-scribbles" id="scribble-2" src="../src/images/Vector 3whiteboard_scribbles.svg"
-            width="250px">
-        <img class="whiteboard-scribbles" id="scribble-3" src="../src/images/Vector 1whiteboard_scribbles_2.svg"
-            width="250px">
+        <img class="whiteboard-scribbles" id="scribble-1" src=<%=require("./images/Vector_3whiteboard_scribbles.svg")%>
+        width="250px" />
+        <img class="whiteboard-scribbles" id="scribble-2" src=<%=require("./images/Vector_3whiteboard_scribbles.svg")%>
+        width="250px"/>
+        <img class="whiteboard-scribbles" id="scribble-3" src=<%=require("./images/Vector_1whiteboard_scribbles_2.svg")%>
+        width="250px"/>
 
         <h1>Weather Board</h1>
 
@@ -28,8 +28,8 @@
         </section>
 
         <section id="weather-section">
-            <div class="weather-icon-container"><img width="280px" id="weather-icon"
-                    src="../src/images/cloudy_house.svg">
+            <div class="weather-icon-container"><img id="weather-icon" src=<%=require("./images/cloudy_house.svg")%> 
+                width="280px"/>
             </div>
             <div class="weather-info">
 
