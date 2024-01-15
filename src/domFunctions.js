@@ -46,21 +46,25 @@ function setWeatherIconOnDOM(condition) {
 
         case "Sunny":
         case "Clear":
-            getWeatherFromDOM.weatherIcon.src = '../src/images/sunny.svg';
+            getWeatherFromDOM.weatherIcon.src = require("./images/sunny.svg");
+            getWeatherFromDOM.weatherIcon.style.width = "280px";
             break;
 
         case "Partly cloudy":
-            getWeatherFromDOM.weatherIcon.src = '../src/images/cloudy_house.svg';
+            getWeatherFromDOM.weatherIcon.src = require("./images/cloudy_house.svg");
+            getWeatherFromDOM.weatherIcon.style.width = "280px";
             break;
 
         case "Cloudy":
         case "Overcast":
         case "Mist":
-            getWeatherFromDOM.weatherIcon.src = '../src/images/partly_cloudy1.svg';
+            getWeatherFromDOM.weatherIcon.src = require("./images/partly_cloudy1.svg");
+            getWeatherFromDOM.weatherIcon.style.width = "280px";
             break;
 
         case "Blowing snow":
-            getWeatherFromDOM.weatherIcon.src = '../src/images/windy.png';
+            getWeatherFromDOM.weatherIcon.src = require("./images/windy.svg");
+            getWeatherFromDOM.weatherIcon.style.width = "280px";
             break;
 
         case "Patchy rain possible":
@@ -79,7 +83,7 @@ function setWeatherIconOnDOM(condition) {
         case "Light rain shower":
         case "Moderate or heavy rain shower":
         case "Torrential rain shower":
-            getWeatherFromDOM.weatherIcon.src = '../src/images/Rain.svg';
+            getWeatherFromDOM.weatherIcon.src = require("./images/Rain.svg");
             getWeatherFromDOM.weatherIcon.style.width = "250px";
             break;
 
@@ -88,7 +92,8 @@ function setWeatherIconOnDOM(condition) {
         case "Moderate or heavy rain with thunder":
         case "Patchy light snow with thunder":
         case "Moderate or heavy snow with thunder":
-            getWeatherFromDOM.weatherIcon.src = '../src/images/thunder.png';
+            getWeatherFromDOM.weatherIcon.src = require("./images/thunder.svg");
+            getWeatherFromDOM.weatherIcon.style.width = "280px";
             break;
 
         case "Patchy sleet possible":
@@ -110,7 +115,8 @@ function setWeatherIconOnDOM(condition) {
         case "Moderate or heavy snow showers":
         case "Light showers of ice pellets":
         case "Moderate or heavy showers of ice pellets":
-            getWeatherFromDOM.weatherIcon.src = '../src/images/snowy.png';
+            getWeatherFromDOM.weatherIcon.src = require("./images/snowy.svg");
+            getWeatherFromDOM.weatherIcon.style.width = "250px";
             break;
 
     }

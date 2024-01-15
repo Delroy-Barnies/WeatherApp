@@ -118,7 +118,7 @@ h3 {
     align-items: center;
     position: absolute;
     grid-template-columns: 280px 1fr;
-    width: 750px;
+    width: 780px;
     height: 300px;
     margin-top: 50px;
     top: 33vh;
@@ -131,6 +131,7 @@ h3 {
 }
 
 .weather-info-right-side {
+    flex: none;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
