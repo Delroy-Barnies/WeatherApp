@@ -7,7 +7,7 @@ document.querySelector('form').addEventListener("submit", (e) => {
 
     e.preventDefault();
 
-    fetch(`http://api.weatherapi.com/v1/current.json?key=41a6b63eb5a94b4aa4d180152240501&q=${input.value}`, { mode: 'cors' })
+    fetch(`https://api.weatherapi.com/v1/current.json?key=41a6b63eb5a94b4aa4d180152240501&q=${input.value}`, { mode: 'cors' })
         .then(function (response) {
             return response.json();
         })
