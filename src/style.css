@@ -154,7 +154,7 @@ h3 {
 
 .weather-info-bottom {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
 }
 
