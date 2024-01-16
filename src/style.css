@@ -73,6 +73,7 @@ h3,
 h1 {
     padding: 0;
     margin: 0;
+    transition: ease-in-out 0.15s;
 }
 
 h1 {
@@ -120,7 +121,12 @@ h3 {
     width: 780px;
     height: 300px;
     margin-top: 50px;
-    margin-left: 150px;
+    margin-left: 140px;
+    gap: 10px;
+}
+
+#weather-icon {
+    transition: ease-in-out 0.15s;
 }
 
 .weather-info {
@@ -171,4 +177,30 @@ h3 {
 
 .feels-like-temperature-container {
     display: flex;
+}
+
+@media(max-height: 800px) {
+
+    #weather-section {
+        margin-top: 20px;
+        margin-left: 150px;
+    }
+
+    h1 {
+        font-size: 8rem;
+    }
+
+    h2 {
+        font-size: 6rem;
+    }
+
+    h3 {
+        font-size: 1.8rem;
+    }
+
+    #scribble-3 {
+        bottom: 0.5vh;
+        right: 10vw;
+    }
+
 }
