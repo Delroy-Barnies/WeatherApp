@@ -35,7 +35,7 @@ export function setWeatherOnDOM(condition, country, city, temperature, feelsLike
     getWeatherFromDOM.city.textContent = `${city}, ${getCountry(country)}`;
     getWeatherFromDOM.temperature.textContent = temperature;
     getWeatherFromDOM.feelsLikeTemperature.textContent = `Feels like: ${feelsLikeTemperature}`;
-    getWeatherFromDOM.wind.textContent = `Wind: ${wind}KPH`;
+    getWeatherFromDOM.wind.textContent = `Wind: ${wind}km/h`;
     getWeatherFromDOM.humidity.textContent = `Humidity: ${humidity}%`;
 
 }
